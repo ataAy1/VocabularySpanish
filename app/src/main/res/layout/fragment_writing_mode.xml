@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#333030"
+    tools:context=".ui.fragment.WritingModeFragment">
+
+    <TextView
+        android:id="@+id/turkishWordTextView"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="44dp"
+        android:background="#534F4F"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="44dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/checkAnswerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/button_design_light"
+        android:hint="Kontrol Et"
+        android:shadowColor="#955757"
+        android:text=""
+        android:textColor="#A13C3C"
+        android:textColorHighlight="#BA6363"
+        android:textColorHint="@color/white"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#635C63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title=" "
+        app:titleMarginStart="15dp"
+        app:titleTextColor="@android:color/white">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Writing Modu"
+            android:textColor="@android:color/white"
+            android:textSize="26dp"
+            android:textStyle="italic|bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/editTextContainer"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginTop="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turkishWordTextView">
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <ImageView
+        android:id="@+id/showHintButtonSecond"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/give_lasthint_background"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirstHint" />
+
+    <ImageView
+        android:id="@+id/showHintButtonFirst"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/give_hint_background"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSecondHint"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewSecondHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:text="2.İpucu"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showHintButtonSecond" />
+
+    <ImageView
+        android:id="@+id/showAnswerButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/give_lasthint_background"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFinalHint"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewFinalHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="44dp"
+        android:text="Final İpucu"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showHintButtonFirst" />
+
+    <TextView
+        android:id="@+id/textViewFirstHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:text="1.İpucu "
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextContainer" />
+
+    <EditText
+        android:id="@+id/hintTextview"
+        android:layout_width="296dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="@color/dark_orange"
+        android:editable="false"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextContainer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

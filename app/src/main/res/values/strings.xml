@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Vocabulary</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="minimum_word_count_message">Çalışma modu kelime sayısı %1$d en az 10 kelime yollayınız.</string>
+
+</resources>

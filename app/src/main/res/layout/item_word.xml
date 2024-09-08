@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@drawable/adapter_design">
+
+
+    <ImageView
+        android:id="@+id/ivListenWord"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvExampleSentenceTurkish"
+        app:layout_constraintEnd_toStartOf="@+id/ivDeleteWord"
+        app:layout_constraintTop_toBottomOf="@+id/ivListenWordAudio"
+        app:srcCompat="@drawable/listen_icons" />
+
+    <TextView
+        android:id="@+id/tvWordTurkish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/white"
+        android:text=""
+        android:textColor="@color/azure"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWordSpanish" />
+
+
+    <TextView
+        android:id="@+id/tvWordSpanish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="1dp"
+        android:background="#E1B47A"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/tvWordTurkish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWordType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="6dp"
+        android:background="#9A9082"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvExampleSentenceTurkish"
+        app:layout_constraintStart_toEndOf="@+id/tvWordsNumber"
+        app:layout_constraintTop_toTopOf="@+id/tvWordTurkish" />
+
+    <ImageView
+        android:id="@+id/ivDeleteWord"
+        android:layout_width="20dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_look" />
+
+    <ImageView
+        android:id="@+id/ivListenWordAudio"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivDeleteWord"
+        app:layout_constraintEnd_toStartOf="@+id/ivDeleteWord"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/listen_icon" />
+
+    <TextView
+        android:id="@+id/tvWordsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:background="#1B1313"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvExampleSentenceTurkish"
+        app:layout_constraintEnd_toStartOf="@+id/tvWordType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvExampleSentenceTurkish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/greenYellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivDeleteWord" />
+
+    <TextView
+        android:id="@+id/tvExampleSentenceTranslation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="6dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/background_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvExampleSentenceTurkish" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

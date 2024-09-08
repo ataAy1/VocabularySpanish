@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/View"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333030"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.LearningModeFragment">
+
+    <EditText
+        android:id="@+id/spanishSentenceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/dark_orange"
+        android:editable="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exampleSentenceLabel"></EditText>
+
+    <EditText
+        android:id="@+id/turkishSentenceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:editable="false"
+        android:backgroundTint="@color/dark_orange"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spanishSentenceEditText"></EditText>
+
+    <TextView
+        android:id="@+id/practicalModeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:hint="Pratik Modu"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/practicalModeImage"
+        app:layout_constraintStart_toStartOf="@+id/practicalModeImage"
+        app:layout_constraintTop_toBottomOf="@+id/practicalModeImage" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#333030"
+        app:title=" "
+        app:titleMarginStart="15dp"
+        app:titleTextColor="@color/azure">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Learning Modu"
+            android:textColor="@color/alice_blue"
+            android:textSize="25dp"
+            android:textStyle="italic|bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <TextView
+        android:id="@+id/spanishWordLabel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/design_learningmod"
+        android:gravity="center"
+        android:hint="TR"
+        android:text=""
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spanishInfoLabel" />
+
+    <TextView
+        android:id="@+id/turkishWordLabel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/design_learningmod"
+        android:gravity="center"
+        android:hint="ENG"
+        android:text=""
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spanishWordLabel" />
+
+    <TextView
+        android:id="@+id/wordTypeLabel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/design_learningmod"
+        android:gravity="center"
+        android:hint="Tür"
+        android:text=""
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turkishWordLabel" />
+
+
+    <TextView
+        android:id="@+id/progressTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint=""
+        android:textSize="12dp"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:max="100"
+        android:outlineAmbientShadowColor="@color/crimson"
+        android:outlineSpotShadowColor="@color/coral"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/learningModeImage"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="44dp"
+        android:background="@drawable/left_arrow_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turkishSentenceEditText" />
+
+    <ImageView
+        android:id="@+id/practicalModeImage"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/right_arrow_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turkishSentenceEditText" />
+
+    <TextView
+        android:id="@+id/learningModeLabel"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:hint="Öğrenme Modu"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:textColor="#F4F0F0"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/learningModeImage"
+        app:layout_constraintStart_toStartOf="@+id/learningModeImage"
+        app:layout_constraintTop_toBottomOf="@+id/learningModeImage" />
+
+    <TextView
+        android:id="@+id/spanishInfoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Kelimenin Türkçesi"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/turkishInfoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Kelimenin İspanyolcası"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spanishWordLabel" />
+
+    <TextView
+        android:id="@+id/wordTypeInfoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Kelime Türü"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turkishWordLabel" />
+
+    <TextView
+        android:id="@+id/exampleSentenceLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="#685D5D"
+        android:text="Örnek Cümle"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordTypeLabel" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

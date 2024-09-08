@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/modeSelectionFragment"
+        android:icon="@drawable/home_navigation"
+        android:title="AnaSayfa" />
+
+    <item
+        android:id="@+id/wordsFragment"
+        android:icon="@drawable/icon_kelimelerim"
+        android:title="Kelimeler"
+
+        />
+    <item
+        android:id="@+id/wordGraph"
+        android:icon="@drawable/graph_navigation"
+        android:title="Grafik"
+        />
+
+</menu>

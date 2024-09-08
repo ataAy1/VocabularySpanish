@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="#333030"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.QuizModeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#635C63"
+        app:title=" "
+        app:titleMarginStart="15dp"
+        app:titleTextColor="@color/black">
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Quiz Modu"
+            android:textColor="@color/background_color"
+            android:textSize="26dp"
+            android:textStyle="italic|bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/questionOfTextView"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="16dp"
+        android:background="#534F4F"
+        android:gravity="center"
+        android:text="asdasdasd"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/design_default_color_error"
+        android:textSize="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionOfTitleTextView" />
+
+
+    <TextView
+        android:id="@+id/tryAgainTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="72dp"
+        android:text="?"
+        android:textAlignment="center"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/questionOfTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Türkçesi Nedir?"
+        android:textAlignment="center"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tryAgainTextView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/firstOptionButton"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/button_design_light"
+        android:text="A"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionOfTextView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/thirdOptionButton"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_design_light"
+        android:text="C"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/secondOptionButton"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/secondOptionButton"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_design_light"
+        android:text="B"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/firstOptionButton"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fourthOptionButton"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_design_light"
+        android:text="D"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/thirdOptionButton"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/modeSelectionFragment">
+
+    <fragment
+        android:id="@+id/listeningModFragment"
+        android:name="com.kelimelerleispanyolca.vocabulary.ui.fragment.ListeningModFragment"
+        android:label="fragment_listening_mod"
+        tools:layout="@layout/fragment_listening_mode" />
+    <fragment
+        android:id="@+id/quizModeFragment"
+        android:name="com.kelimelerleispanyolca.vocabulary.ui.fragment.QuizModeFragment"
+        android:label="fragment_quiz_modu"
+        tools:layout="@layout/fragment_quiz_mode" />
+    <fragment
+        android:id="@+id/wordGraph"
+        android:name="com.kelimelerleispanyolca.vocabulary.ui.fragment.WordGraph"
+        android:label="fragment_kelime_grafik"
+        tools:layout="@layout/fragment_word_graph" />
+    <fragment
+        android:id="@+id/learningModeFragment"
+        android:name="com.kelimelerleispanyolca.vocabulary.ui.fragment.LearningModeFragment"
+        android:label="fragment_ogrenme_modu"
+        tools:layout="@layout/fragment_learning_mode" />
+    <fragment
+        android:id="@+id/writingModeFragment"
+        android:name="com.kelimelerleispanyolca.vocabulary.ui.fragment.WritingModeFragment"
+        android:label="fragment_writing_mod"
+        tools:layout="@layout/fragment_writing_mode" />
+    <fragment
+        android:id="@+id/addWordFragment"
+        android:name="com.kelimelerleispanyolca.vocabulary.ui.fragment.AddWordFragment"
+        android:label="fragment_kelime_ekle"
+        tools:layout="@layout/fragment_add_word"
+
+        >
+        <argument
+            android:name="getWord"
+            app:argType="com.kelimelerleispanyolca.vocabulary.data.entity.WordSaveEntity" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordsFragment"
+        android:name="com.kelimelerleispanyolca.vocabulary.ui.fragment.WordsFragment"
+        android:label="fragment_kelimeler"
+        tools:layout="@layout/fragment_words" >
+        <action
+            android:id="@+id/action_wordsFragment_to_updateWordFragment"
+            app:destination="@id/updateWordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateWordFragment"
+        android:name="com.kelimelerleispanyolca.vocabulary.ui.fragment.UpdateWordFragment"
+        android:label="fragment_kelime_guncelle"
+        tools:layout="@layout/fragment_update_word" >
+        <argument
+            android:name="updateWord"
+            app:argType="com.kelimelerleispanyolca.vocabulary.data.entity.WordSaveEntity" />
+    </fragment>
+    <fragment
+        android:id="@+id/modeSelectionFragment"
+        android:name="com.kelimelerleispanyolca.vocabulary.ui.fragment.ModeSelectionFragment"
+        android:label="fragment_mod_secim"
+        tools:layout="@layout/fragment_mode_selection" >
+        <action
+            android:id="@+id/action_modeSelectionFragment_to_writingModeFragment"
+            app:destination="@id/writingModeFragment" />
+        <action
+            android:id="@+id/action_modeSelectionFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment" />
+        <action
+            android:id="@+id/action_modeSelectionFragment_to_wordGraph"
+            app:destination="@id/wordGraph" />
+        <action
+            android:id="@+id/action_modeSelectionFragment_to_quizModeFragment"
+            app:destination="@id/quizModeFragment" />
+        <action
+            android:id="@+id/action_modeSelectionFragment_to_listeningModFragment"
+            app:destination="@id/listeningModFragment" />
+        <action
+            android:id="@+id/action_modeSelectionFragment_to_learningModeFragment"
+            app:destination="@id/learningModeFragment" />
+        <action
+            android:id="@+id/action_modeSelectionFragment_to_addWordFragment"
+            app:destination="@id/addWordFragment" />
+    </fragment>
+</navigation>

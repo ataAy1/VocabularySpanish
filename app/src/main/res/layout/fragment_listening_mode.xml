@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333030"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.ListeningModFragment">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/translationButton"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button_design_light"
+        android:hint="Çevirisine Bak"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColorHint="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hintButton" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#635C63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title=" "
+        app:titleMarginStart="15dp"
+        app:titleTextColor="@color/black">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Listening Modu"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="italic|bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Dinlediğiniz Kelimeyi Yazın"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hintButton"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button_design_light"
+        android:hint="İpucu Ver"
+        android:text=""
+        android:textColorHint="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkAnswerButton" />
+
+    <TextView
+        android:id="@+id/repeatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Tekrar Dinle"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/dinle"
+        app:layout_constraintStart_toStartOf="@+id/listenButton"
+        app:layout_constraintTop_toBottomOf="@+id/listenButton" />
+
+    <EditText
+        android:id="@+id/userInputEditText"
+        android:layout_width="344dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:background="#534F4F"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionTextView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/checkAnswerButton"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button_design_light"
+        android:hint="Cevabımı Kontrol Et"
+        android:text=""
+        android:textColorHint="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeatTextView" />
+
+    <ImageView
+        android:id="@+id/listenButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/listen_icons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userInputEditText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

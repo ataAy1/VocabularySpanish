@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1818"
+    tools:context=".ui.fragment.ModeSelectionFragment">
+
+
+    <LinearLayout
+        android:id="@+id/learningModeLayout"
+        android:layout_width="384dp"
+        android:layout_height="312dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_design"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/learningModeImageView"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/transport_ing_background"
+            android:padding="25dp"
+            android:src="@drawable/dashboard"
+            app:tint="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Öğrenme Modu "
+            android:layout_gravity="center"
+            android:textColor="@color/lavender"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wordSavingLayout"
+        android:layout_width="192dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/button_design"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/writingModeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/listeningModeLayout">
+
+        <ImageView
+            android:id="@+id/wordSavingImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/word_save_background"
+            android:padding="25dp"
+            android:src="@drawable/word_save_background"
+            app:tint="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelime Ekle"
+            android:textColor="@color/burlyWood"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listeningModeLayout"
+        android:layout_width="192dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/button_design"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quizModeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/learningModeLayout">
+
+        <ImageView
+            android:id="@+id/listeningModeImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/listening_mod_background"
+            android:padding="25dp"
+            app:tint="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinleme "
+            android:textColor="@color/burlyWood"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/writingModeLayout"
+        android:layout_width="192dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_design"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizModeLayout">
+
+        <ImageView
+            android:id="@+id/writingModeImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/writing_mod_background"
+            android:padding="25dp"
+            android:src="@drawable/writing_mod_background"
+            app:tint="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yazma "
+            android:textColor="@color/burlyWood"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quizModeLayout"
+        android:layout_width="192dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/button_design"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/learningModeLayout">
+
+        <ImageView
+            android:id="@+id/quizModeImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/quiz_mod_background"
+            android:padding="25dp"
+            android:textStyle="bold"
+            app:tint="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz"
+            android:textColor="@color/burlyWood"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
